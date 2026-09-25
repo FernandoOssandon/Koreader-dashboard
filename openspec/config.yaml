@@ -1,0 +1,51 @@
+schema: spec-driven
+
+context: |
+  Language: es
+  All artifacts must be written in es.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  Proyecto: KOReader Dashboard Screensaver.
+  Plugin de KOReader (Kindle con jailbreak, LuaJIT) que, al suspender el
+  dispositivo, pinta en E-Ink un dashboard estático con fecha, clima, agenda
+  del día y batería.
+
+  Arquitectura híbrida con patrón Provider/Adapter:
+  - Modo Backend BFF (principal): microservicio que consolida clima + agenda en
+    un JSON < 2 KB (GET /api/dashboard), servido desde memoria (< 300 ms).
+  - Modo Standalone (secundario/fallback): el plugin consulta Open-Meteo y
+    descarga un .ics que parsea localmente en Lua.
+  La vista E-Ink, el ciclo de vida de suspensión y el caché local son 100 %
+  agnósticos al origen de los datos.
+
+  Stack:
+  - Plugin: Lua 5.1 / LuaJIT dentro de KOReader >= v2024.04 (widgets nativos,
+    LuaSocket + socketutil, json de KOReader). Tests con busted; emulador
+    KOReader (kodev) para el layout.
+  - Backend: Python 3.12, FastAPI, httpx, icalendar, recurring-ical-events,
+    Pydantic v2. Docker (amd64 + arm64). Tests con pytest.
+  - Dispositivos objetivo: Kindle Paperwhite 3/4/5 y Kindle Basic 2022, sin
+    "Ofertas especiales".
+
+  Restricciones duras:
+  - El handler de suspensión devuelve el control a KOReader en <= 3.0 s.
+  - Como máximo 1 request HTTP por suspensión; nunca se enciende el Wi-Fi.
+  - Todo error degrada (live -> caché -> pantalla mínima); nunca bloquea la
+    suspensión.
+
+  Fases (una change de OpenSpec por fase, en orden; archivar cada una antes de
+  empezar la siguiente):
+  1. add-bff-dashboard-mvp
+  2. refactor-data-provider-abstraction
+  3. add-standalone-direct-provider
+
+rules:
+  specs:
+    - Requisitos y escenarios en español; mantener en inglés los encabezados estructurales, SHALL/MUST y WHEN/THEN/AND.
+    - Los specs describen comportamiento observable; nombres de módulos, librerías y firmas van en design.md.
+  design:
+    - Incluir un presupuesto temporal cuando el cambio toque el camino de suspensión.
+    - Las decisiones van con las alternativas descartadas.
+  tasks:
+    - Cada tarea indica cómo se verifica (test, comando o comportamiento observable en el dispositivo).
+    - Las tareas que requieren el Kindle real se marcan con [dispositivo].
