@@ -1,0 +1,827 @@
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/03/26-23:38:12
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.1
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+ffi.findlib: fbink_input [1]
+ffi.load: libs/libfbink_input.so.1
+[FBInk] /dev/input/event0: `20cc000.snvs:snvs-powerkey` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event1: `bd71827-power` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event2: `cyttsp5_mt` = TOUCHSCREEN
+[ko-input] Forked off fake event generator (pid: 22968)
+09/03/26-23:38:13 INFO  initializing for device KindleBasic3 
+09/03/26-23:38:13 INFO  framebuffer resolution: {
+  h = 800,
+  w = 600
+} --[[table: 0x767840d8]] 
+[ko-input]: uevent listener ready for input device hotplug
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+09/03/26-23:38:13 INFO  Performing one-time migration for 20200421 
+09/03/26-23:38:13 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+09/03/26-23:38:13 INFO  ./cache/fontlist/fontinfo.dat fopen: No such file or directory -> initializing it 
+09/03/26-23:38:15 INFO  Performing one-time migration for 20210306 (1/2) 
+09/03/26-23:38:15 INFO  Performing one-time migration for 20210306 (2/2) 
+09/03/26-23:38:15 INFO  Performing one-time migration for 20210330 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210404 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210409 
+09/03/26-23:38:16 WARN  os.rename: ./cache/fontinfo.dat: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210412 
+09/03/26-23:38:16 WARN  os.rename: ./cache/calibre-libraries.lua: No such file or directory 
+09/03/26-23:38:16 WARN  os.rename: ./cache/calibre-books.dat: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210414 
+09/03/26-23:38:16 WARN  os.remove: ./cache/calibre/books.dat: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210503 & 20210508 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210518 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210521 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210531 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210622 
+09/03/26-23:38:16 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210629 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210715 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210720 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210831 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20210925 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20220116 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20220205 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20220819 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20220914 
+09/03/26-23:38:16 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20220930 
+09/03/26-23:38:16 WARN  loadfile: cannot open ./defaults.persistent.lua: No such file or directory 
+09/03/26-23:38:16 WARN  os.rename: ./defaults.persistent.lua: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20221027 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230531 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230703 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230707 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230710 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230731 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230802 
+09/03/26-23:38:16 INFO  statistics.sqlite3 not found. 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20230901 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20231217 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240408 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240616 
+09/03/26-23:38:16 WARN  os.remove: ./cache/fontlist/fontinfo.dat: No such file or directory 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240731 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240911 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240914 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240915 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20240928 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20241123 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20241207 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20241208 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20241228 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250207 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250302 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250318 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250405 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250601 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250914 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20250929 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20260306 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20260428 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20260512 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20260517 
+09/03/26-23:38:16 INFO  Performing one-time migration for 20260623 
+09/03/26-23:38:17 INFO  opening file ./help/quickstart-en-v2026.07.1.html 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+09/03/26-23:38:17 INFO  Inhibiting user input 
+09/03/26-23:38:17 INFO  Looking for plugins in directory: plugins 
+09/03/26-23:38:18 INFO  CoverBrowser: setting default display modes 
+09/03/26-23:38:18 WARN  BookInfo cache DB schema updated from version 0 to version 20201210 
+09/03/26-23:38:18 WARN  Deleting existing ./settings/bookinfo_cache.sqlite3 to recreate it 
+09/03/26-23:38:18 WARN  No gestures file or invalid gestures file found, copying defaults 
+09/03/26-23:38:19 INFO  Restoring user input handling 
+09/03/26-23:39:13 INFO  UIManager: No dialogs left to show 
+09/03/26-23:39:13 INFO  Tearing down UIManager with exit code: 0 
+[ko-input] Closed input device with fd: 17 @ idx: 1 (matched by idx)
+[ko-input] Closed input device with fd: 16 @ idx: 0 (matched by idx)
+[ue_wait_for_event:269] poll: Interrupted system call
+lipc-wait-event exited normally with status: 0
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/03/26-23:45:00
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.1
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+ffi.findlib: fbink_input [1]
+ffi.load: libs/libfbink_input.so.1
+[FBInk] /dev/input/event0: `20cc000.snvs:snvs-powerkey` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event1: `bd71827-power` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event2: `cyttsp5_mt` = TOUCHSCREEN
+[ko-input] Forked off fake event generator (pid: 23748)
+09/03/26-23:45:01 INFO  initializing for device KindleBasic3 
+09/03/26-23:45:01 INFO  framebuffer resolution: {
+  h = 800,
+  w = 600
+} --[[table: 0x76965868]] 
+[ko-input]: uevent listener ready for input device hotplug
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+09/03/26-23:45:02 INFO  ./cache/fontlist/fontinfo.dat fopen: No such file or directory -> initializing it 
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/03/26-23:45:03 INFO  Looking for plugins in directory: plugins 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+warning: bogus font ascent/descent values (3117 / -2463)
+09/03/26-23:54:50 INFO  opening file /mnt/us/documents/vicen, profe/los-que-abandona-omelas - profe vicen.pdf 
+09/03/26-23:54:51 INFO  Inhibiting user input 
+09/03/26-23:54:51 INFO  setting zoom mode to pagewidth 
+09/03/26-23:54:51 INFO  setting zoom mode to contentwidth 
+warning: bogus font ascent/descent values (3117 / -2463)
+09/03/26-23:54:52 INFO  Restoring user input handling 
+09/03/26-23:58:05 INFO  setting zoom mode to page 
+09/03/26-23:58:07 INFO  setting zoom mode to contentwidth 
+09/03/26-23:58:23 INFO  setting zoom mode to page 
+09/03/26-23:58:29 INFO  setting zoom mode to contentwidth 
+09/03/26-23:58:58 INFO  Thumbnails cache: 6/500 (276.9 kB/2.4 MB) 
+09/03/26-23:59:11 INFO  Inhibiting user input 
+09/03/26-23:59:18 INFO  Restoring user input handling 
+09/03/26-23:59:19 INFO  Inhibiting user input 
+09/03/26-23:59:22 INFO  Restoring user input handling 
+09/03/26-23:59:22 INFO  Inhibiting user input 
+09/03/26-23:59:23 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/03/26-23:59:23 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/498b0bfa-9602-4259-8625-547345fbfb00/w=1620 
+09/03/26-23:59:24 INFO  Restoring user input handling 
+09/03/26-23:59:35 INFO  Inhibiting user input 
+09/03/26-23:59:36 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/03/26-23:59:36 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/38a9b2b7-cfb3-441a-f1b6-88583c660500/w=2550 
+09/03/26-23:59:36 INFO  Restoring user input handling 
+09/03/26-23:59:38 INFO  Inhibiting user input 
+09/03/26-23:59:38 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/03/26-23:59:38 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/1376eb0c-ee17-4c0c-0dad-717e5b605700/w=1200 
+09/03/26-23:59:39 INFO  Restoring user input handling 
+09/03/26-23:59:40 INFO  Inhibiting user input 
+09/03/26-23:59:41 INFO  Restoring user input handling 
+09/03/26-23:59:45 INFO  Inhibiting user input 
+09/03/26-23:59:47 INFO  Restoring user input handling 
+09/03/26-23:59:48 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/03/26-23:59:48 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/360c6bb9-9766-4e84-755e-ea0aff44cb00/w=906 
+09/03/26-23:59:48 INFO  Inhibiting user input 
+09/03/26-23:59:49 INFO  Restoring user input handling 
+09/03/26-23:59:50 INFO  Inhibiting user input 
+09/03/26-23:59:51 INFO  Restoring user input handling 
+09/03/26-23:59:51 INFO  Inhibiting user input 
+09/03/26-23:59:54 INFO  Restoring user input handling 
+09/03/26-23:59:58 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/03/26-23:59:58 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/0038a707-f2a4-444a-0b2b-f5ec1ae17600/w=800 
+09/03/26-23:59:58 INFO  Inhibiting user input 
+09/03/26-23:59:59 INFO  Restoring user input handling 
+09/04/26-00:00:00 INFO  Inhibiting user input 
+09/04/26-00:00:01 INFO  Restoring user input handling 
+09/04/26-00:00:01 INFO  Inhibiting user input 
+09/04/26-00:00:02 INFO  Restoring user input handling 
+09/04/26-00:00:02 INFO  Inhibiting user input 
+09/04/26-00:00:04 INFO  Restoring user input handling 
+09/04/26-00:00:04 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/04/26-00:00:04 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/aca0f1c7-2ae0-42dc-f819-ce3ada35e200/w=2550 
+09/04/26-00:00:04 INFO  Inhibiting user input 
+09/04/26-00:00:05 INFO  Restoring user input handling 
+09/04/26-00:00:06 INFO  Inhibiting user input 
+09/04/26-00:00:07 INFO  Restoring user input handling 
+09/04/26-00:00:07 INFO  Inhibiting user input 
+09/04/26-00:00:09 WARN  HTTP error: HTTP/1.1 400 Bad Request 
+09/04/26-00:00:09 INFO  failed fetching: https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/d803d72a-d0c0-454c-d1cd-12600a171d00/w=2033 
+09/04/26-00:00:10 INFO  Restoring user input handling 
+09/04/26-00:01:13 INFO  Inhibiting user input 
+09/04/26-00:01:14 INFO  Restoring user input handling 
+09/04/26-00:01:14 INFO  Inhibiting user input 
+09/04/26-00:01:15 INFO  Restoring user input handling 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+09/04/26-00:01:23 INFO  opening file /mnt/us/koreader/news/Our World in Data/26-08-30_20-00_Beef production in Brazil has been the largest driver of global deforestation in recent decades.epub 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+09/04/26-00:01:23 INFO  Inhibiting user input 
+09/04/26-00:01:25 INFO  Restoring user input handling 
+09/04/26-00:02:11 INFO  UIManager: No dialogs left to show 
+09/04/26-00:02:11 INFO  Tearing down UIManager with exit code: 0 
+[ko-input] Closed input device with fd: 17 @ idx: 1 (matched by idx)
+[ko-input] Closed input device with fd: 16 @ idx: 0 (matched by idx)
+[ue_wait_for_event:269] poll: Interrupted system call
+lipc-wait-event exited normally with status: 0
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/04/26-00:07:34
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.1
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+ffi.findlib: fbink_input [1]
+ffi.load: libs/libfbink_input.so.1
+[FBInk] /dev/input/event0: `20cc000.snvs:snvs-powerkey` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event1: `bd71827-power` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event2: `cyttsp5_mt` = TOUCHSCREEN
+[ko-input] Forked off fake event generator (pid: 26785)
+09/04/26-00:07:35 INFO  initializing for device KindleBasic3 
+09/04/26-00:07:35 INFO  framebuffer resolution: {
+  h = 800,
+  w = 600
+} --[[table: 0x76715ce8]] 
+[ko-input]: uevent listener ready for input device hotplug
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/04/26-00:07:36 INFO  Looking for plugins in directory: plugins 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+09/04/26-00:07:37 INFO  simpleui i18n: loaded plugins/simpleui.koplugin/locale/es.po — 1001 strings 
+09/04/26-00:07:38 WARN  PluginLoader: simpleui name in _meta.lua, is deprecated and will be ignored. 
+09/04/26-00:07:38 INFO  simpleui: userdata migration v1 complete 
+09/04/26-00:07:38 INFO  simpleui: settings migration v2 complete — 0 keys moved to SUISettings 
+09/04/26-00:07:38 INFO  simpleui: settings migration v3 complete — 0 navbar_* keys renamed to simpleui_* 
+09/04/26-00:07:38 INFO  simpleui: settings migration v4 complete — 0 icon keys renamed 
+09/04/26-00:07:38 INFO  simpleui: settings migration v5 complete — 0 titlebar keys renamed 
+09/04/26-00:07:38 INFO  simpleui: settings migration v6 complete — 0 keys renamed/removed 
+09/04/26-00:07:38 INFO  simpleui: migration v7 — enabled recent_show_finished 
+09/04/26-00:07:38 INFO  simpleui: migration v7 — enabled simpleui_updater_auto_check 
+09/04/26-00:07:38 INFO  simpleui: migration v8 — seeded coverdeck_main_order from legacy title_pos 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+09/04/26-00:07:50 INFO  simpleui updater: current=2.7.0 latest=2.7.0 has_update=false 
+09/04/26-00:07:55 WARN  simpleui: quote: build source=quotes align=right 
+09/04/26-00:07:55 WARN  simpleui quote: new deck n=99 pos=1 
+09/04/26-00:07:55 WARN  simpleui quote: showing idx=6 saved pos=2 
+09/04/26-00:08:03 WARN  simpleui: quote: build source=quotes align=center 
+09/04/26-00:08:03 WARN  simpleui quote: loaded deck pos=2/99 
+09/04/26-00:08:04 WARN  simpleui quote: showing idx=76 saved pos=3 
+09/04/26-00:08:05 WARN  simpleui: quote: build source=quotes align=center 
+09/04/26-00:08:05 WARN  simpleui quote: loaded deck pos=3/99 
+09/04/26-00:08:05 WARN  simpleui quote: showing idx=78 saved pos=4 
+09/04/26-00:08:28 WARN  simpleui: quote: build source=quotes align=right 
+09/04/26-00:08:28 WARN  simpleui quote: loaded deck pos=4/99 
+09/04/26-00:08:28 WARN  simpleui quote: showing idx=95 saved pos=5 
+09/04/26-00:08:29 WARN  simpleui: quote: build source=quotes align=right 
+09/04/26-00:08:29 WARN  simpleui quote: loaded deck pos=5/99 
+09/04/26-00:08:29 WARN  simpleui quote: showing idx=72 saved pos=6 
+09/04/26-00:16:49 INFO  UIManager: No dialogs left to show 
+09/04/26-00:16:49 INFO  Tearing down UIManager with exit code: 0 
+[ko-input] Closed input device with fd: 17 @ idx: 1 (matched by idx)
+[ko-input] Closed input device with fd: 16 @ idx: 0 (matched by idx)
+[ue_wait_for_event:269] poll: Interrupted system call
+lipc-wait-event exited normally with status: 0
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/04/26-08:45:53
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.1
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+ffi.findlib: fbink_input [1]
+ffi.load: libs/libfbink_input.so.1
+[FBInk] /dev/input/event0: `20cc000.snvs:snvs-powerkey` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event1: `bd71827-power` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event2: `cyttsp5_mt` = TOUCHSCREEN
+[ko-input] Forked off fake event generator (pid: 1053)
+09/04/26-08:45:56 INFO  initializing for device KindleBasic3 
+09/04/26-08:45:56 INFO  framebuffer resolution: {
+  h = 800,
+  w = 600
+} --[[table: 0x7674a780]] 
+[ko-input]: uevent listener ready for input device hotplug
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/04/26-08:45:59 INFO  Looking for plugins in directory: plugins 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+09/04/26-08:46:10 INFO  simpleui i18n: loaded plugins/simpleui.koplugin/locale/es.po — 1001 strings 
+09/04/26-08:46:10 WARN  PluginLoader: simpleui name in _meta.lua, is deprecated and will be ignored. 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+ffi.findlib: turbojpeg [0.5.0]
+ffi.load: libs/libturbojpeg.so.0.5.0
+09/04/26-08:46:42 INFO  opening file /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi 
+09/04/26-08:46:43 INFO  Inhibiting user input 
+09/04/26-08:46:47 INFO  Restoring user input handling 
+09/04/26-09:04:31 INFO  Inhibiting user input 
+09/04/26-16:22:45 INFO  Restoring user input handling 
+09/04/26-16:23:32 INFO  Thumbnails cache: 55/500 (2.4 MB/2.4 MB) 
+09/04/26-16:24:09 INFO  opening file /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi 
+09/04/26-16:24:10 INFO  Inhibiting user input 
+09/04/26-16:24:11 INFO  Restoring user input handling 
+09/04/26-16:24:15 INFO  Inhibiting user input 
+09/04/26-17:07:08 INFO  Restoring user input handling 
+09/04/26-17:26:00 INFO  Inhibiting user input 
+09/04/26-18:32:45 INFO  Restoring user input handling 
+09/04/26-18:42:12 INFO  Inhibiting user input 
+09/05/26-15:34:30 INFO  Restoring user input handling 
+09/05/26-15:47:17 INFO  Inhibiting user input 
+09/05/26-15:47:36 INFO  Restoring user input handling 
+09/05/26-15:47:39 INFO  Inhibiting user input 
+09/05/26-21:52:46 INFO  Restoring user input handling 
+09/05/26-22:07:47 INFO  Inhibiting user input 
+09/06/26-19:52:57 INFO  Restoring user input handling 
+09/06/26-20:29:33 INFO  Seen 3 previous attempts at info extraction /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi , too many, ignoring it. 
+09/06/26-20:29:41 INFO  simpleui updater: current=2.7.0 latest=2.7.0 has_update=false 
+09/06/26-20:30:09 INFO  opening file /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi 
+09/06/26-20:30:10 INFO  Inhibiting user input 
+09/06/26-20:30:11 INFO  Restoring user input handling 
+09/06/26-20:33:42 INFO  Inhibiting user input 
+09/06/26-20:33:42 INFO  Restoring user input handling 
+09/06/26-20:33:44 INFO  Inhibiting user input 
+09/06/26-20:33:44 INFO  Restoring user input handling 
+09/06/26-20:33:51 INFO  Inhibiting user input 
+09/06/26-20:33:51 INFO  Restoring user input handling 
+09/06/26-20:33:53 INFO  Inhibiting user input 
+09/06/26-20:33:53 INFO  Restoring user input handling 
+09/06/26-20:34:23 INFO  Inhibiting user input 
+09/06/26-20:34:26 INFO  Restoring user input handling 
+09/06/26-20:34:29 INFO  Inhibiting user input 
+09/06/26-20:34:31 INFO  Restoring user input handling 
+09/06/26-20:57:45 INFO  opening file /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi 
+09/06/26-20:57:45 INFO  Inhibiting user input 
+09/06/26-20:57:47 INFO  Restoring user input handling 
+09/06/26-20:58:24 INFO  Inhibiting user input 
+09/07/26-18:26:13 INFO  Restoring user input handling 
+09/07/26-18:36:31 INFO  Inhibiting user input 
+09/07/26-18:43:18 INFO  Restoring user input handling 
+09/07/26-18:47:50 INFO  Inhibiting user input 
+09/07/26-20:40:09 INFO  Restoring user input handling 
+09/07/26-20:50:51 INFO  Inhibiting user input 
+09/08/26-08:51:51 INFO  Restoring user input handling 
+09/08/26-08:58:23 INFO  Inhibiting user input 
+09/08/26-15:12:44 INFO  Restoring user input handling 
+09/08/26-15:20:57 INFO  Inhibiting user input 
+09/08/26-15:21:00 INFO  Restoring user input handling 
+09/08/26-15:25:59 INFO  Inhibiting user input 
+09/09/26-18:16:49 INFO  Restoring user input handling 
+09/09/26-18:31:36 INFO  Inhibiting user input 
+09/09/26-19:04:37 INFO  Restoring user input handling 
+09/09/26-19:39:38 INFO  Inhibiting user input 
+09/09/26-20:03:56 INFO  Restoring user input handling 
+09/09/26-20:05:06 INFO  Inhibiting user input 
+09/09/26-21:18:23 INFO  Restoring user input handling 
+09/09/26-21:36:39 INFO  Inhibiting user input 
+09/09/26-21:38:46 INFO  Restoring user input handling 
+09/09/26-21:38:53 INFO  Inhibiting user input 
+09/09/26-21:40:54 INFO  Restoring user input handling 
+09/09/26-21:44:34 INFO  Inhibiting user input 
+09/10/26-12:45:37 INFO  Restoring user input handling 
+09/10/26-12:50:01 INFO  Inhibiting user input 
+09/10/26-12:51:23 INFO  Restoring user input handling 
+09/10/26-12:54:32 INFO  opening file /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi 
+09/10/26-12:54:33 INFO  Inhibiting user input 
+09/10/26-12:54:35 INFO  Restoring user input handling 
+09/10/26-14:13:25 INFO  Inhibiting user input 
+09/10/26-14:13:35 INFO  Restoring user input handling 
+09/10/26-14:26:20 INFO  Inhibiting user input 
+09/10/26-14:35:53 INFO  Restoring user input handling 
+09/10/26-15:01:09 INFO  Inhibiting user input 
+09/10/26-15:46:46 INFO  Restoring user input handling 
+09/10/26-16:50:12 INFO  Inhibiting user input 
+09/10/26-17:00:31 INFO  Restoring user input handling 
+09/10/26-17:05:10 INFO  Inhibiting user input 
+09/11/26-10:05:47 INFO  Restoring user input handling 
+09/11/26-10:11:16 INFO  Inhibiting user input 
+09/12/26-10:26:21 INFO  Restoring user input handling 
+09/12/26-10:26:39 INFO  opening file /mnt/us/documents/Martin, George R. R_/Dead Man's Hand - George R. R. Martin.mobi 
+09/12/26-10:26:40 INFO  Inhibiting user input 
+09/12/26-10:26:41 INFO  Restoring user input handling 
+ffi.findlib: turbojpeg [0.5.0]
+ffi.load: libs/libturbojpeg.so.0.5.0
+09/12/26-10:33:28 INFO  Inhibiting user input 
+09/13/26-18:20:37 INFO  Restoring user input handling 
+09/13/26-18:25:46 INFO  Inhibiting user input 
+09/13/26-19:38:17 INFO  Restoring user input handling 
+09/13/26-19:40:03 INFO  opening file /mnt/us/documents/Weiss, Brian/Muchos cuerpos, una misma alma - Brian Weiss.mobi 
+09/13/26-19:40:03 INFO  Inhibiting user input 
+09/13/26-19:40:07 INFO  Restoring user input handling 
+09/13/26-19:43:20 INFO  Inhibiting user input 
+09/13/26-19:47:34 INFO  Restoring user input handling 
+09/13/26-20:10:36 INFO  Inhibiting user input 
+09/13/26-20:10:51 INFO  Restoring user input handling 
+09/13/26-20:10:53 INFO  Inhibiting user input 
+09/13/26-20:10:55 INFO  Restoring user input handling 
+09/13/26-20:10:56 INFO  Inhibiting user input 
+09/13/26-21:51:48 INFO  Restoring user input handling 
+09/13/26-21:53:40 INFO  Inhibiting user input 
+09/13/26-21:53:47 INFO  Restoring user input handling 
+09/13/26-21:53:52 INFO  Inhibiting user input 
+09/13/26-21:59:02 INFO  Restoring user input handling 
+09/13/26-22:15:24 INFO  Inhibiting user input 
+09/14/26-18:42:25 INFO  Restoring user input handling 
+09/14/26-18:49:48 INFO  Inhibiting user input 
+09/14/26-19:02:57 INFO  Restoring user input handling 
+09/14/26-19:17:58 INFO  Inhibiting user input 
+09/14/26-19:24:09 INFO  Restoring user input handling 
+09/14/26-19:50:27 INFO  Inhibiting user input 
+09/14/26-19:50:36 INFO  Restoring user input handling 
+09/14/26-20:05:37 INFO  Inhibiting user input 
+09/15/26-23:57:36 INFO  Restoring user input handling 
+09/15/26-23:59:23 INFO  opening file /mnt/us/documents/Weiss, Brian/Muchos cuerpos, una misma alma - Brian Weiss.mobi 
+09/15/26-23:59:23 INFO  Inhibiting user input 
+09/15/26-23:59:24 INFO  Restoring user input handling 
+09/16/26-00:08:34 INFO  Inhibiting user input 
+09/16/26-08:50:13 INFO  Restoring user input handling 
+09/16/26-09:10:56 INFO  Inhibiting user input 
+09/17/26-22:28:42 INFO  Restoring user input handling 
+09/17/26-22:28:57 INFO  opening file /mnt/us/documents/Weiss, Brian/Muchos cuerpos, una misma alma - Brian Weiss.mobi 
+09/17/26-22:28:58 INFO  Inhibiting user input 
+09/17/26-22:28:55 INFO  Restoring user input handling 
+09/17/26-22:29:02 INFO  simpleui updater: current=2.7.0 latest=2.7.1 has_update=true 
+09/17/26-22:43:54 INFO  Inhibiting user input 
+09/18/26-13:46:27 INFO  Restoring user input handling 
+09/18/26-13:46:49 INFO  opening file /mnt/us/documents/Weiss, Brian/Muchos cuerpos, una misma alma - Brian Weiss.mobi 
+09/18/26-13:46:50 INFO  Inhibiting user input 
+09/18/26-13:46:51 INFO  Restoring user input handling 
+09/18/26-14:07:32 INFO  Inhibiting user input 
+09/18/26-21:38:18 INFO  Restoring user input handling 
+09/18/26-21:40:59 INFO  Inhibiting user input 
+09/18/26-21:43:13 INFO  Restoring user input handling 
+09/18/26-22:00:40 INFO  Inhibiting user input 
+09/19/26-14:39:52 INFO  Restoring user input handling 
+09/19/26-14:47:55 INFO  Inhibiting user input 
+[ue_wait_for_event:269] poll: Interrupted system call
+lipc-wait-event was killed by signal 15
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/21/26-09:33:31
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.1
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+ffi.findlib: fbink_input [1]
+ffi.load: libs/libfbink_input.so.1
+[FBInk] /dev/input/event0: `20cc000.snvs:snvs-powerkey` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event1: `bd71827-power` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event2: `cyttsp5_mt` = TOUCHSCREEN
+[ko-input] Forked off fake event generator (pid: 16670)
+09/21/26-09:33:32 INFO  initializing for device KindleBasic3 
+09/21/26-09:33:32 INFO  framebuffer resolution: {
+  h = 800,
+  w = 600
+} --[[table: 0x76908468]] 
+[ko-input]: uevent listener ready for input device hotplug
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/21/26-09:33:37 INFO  Looking for plugins in directory: plugins 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+09/21/26-09:33:39 WARN  PluginLoader: simpleui name in _meta.lua, is deprecated and will be ignored. 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+09/21/26-09:33:57 INFO  simpleui updater: current=2.7.0 latest=2.7.1 has_update=true 
+09/21/26-09:35:20 INFO  opening file /mnt/us/documents/Weiss, Brian/Muchos cuerpos, una misma alma - Brian Weiss.mobi 
+09/21/26-09:35:20 INFO  Inhibiting user input 
+09/21/26-09:35:21 INFO  Restoring user input handling 
+09/21/26-09:35:50 INFO  Inhibiting user input 
+09/22/26-15:07:39 INFO  Restoring user input handling 
+09/22/26-15:16:38 INFO  Inhibiting user input 
+09/23/26-11:22:52 INFO  Restoring user input handling 
+09/23/26-11:23:40 INFO  Inhibiting user input 
+09/27/26-12:46:30 INFO  Restoring user input handling 
+09/27/26-13:19:14 INFO  Inhibiting user input 
+09/27/26-13:42:05 INFO  Restoring user input handling 
+09/27/26-13:42:11 INFO  Inhibiting user input 
+09/27/26-13:42:12 INFO  Restoring user input handling 
+09/27/26-13:42:16 INFO  Inhibiting user input 
+09/27/26-13:42:16 INFO  Restoring user input handling 
+09/27/26-13:42:18 INFO  Inhibiting user input 
+09/27/26-13:42:19 INFO  Restoring user input handling 
+09/27/26-13:51:29 INFO  Inhibiting user input 
+09/28/26-09:06:30 INFO  Restoring user input handling 
+09/28/26-09:15:11 INFO  Inhibiting user input 
+09/28/26-19:01:33 INFO  Restoring user input handling 
+09/28/26-19:17:31 INFO  Inhibiting user input 
+09/29/26-19:15:25 INFO  Restoring user input handling 
+09/29/26-19:29:12 INFO  Inhibiting user input 
+09/29/26-19:33:08 INFO  Restoring user input handling 
+09/29/26-19:33:39 INFO  UIManager: No dialogs left to show 
+09/29/26-19:33:39 INFO  Tearing down UIManager with exit code: 0 
+[ko-input] Closed input device with fd: 17 @ idx: 1 (matched by idx)
+[ko-input] Closed input device with fd: 16 @ idx: 0 (matched by idx)
+[ue_wait_for_event:269] poll: Interrupted system call
+lipc-wait-event exited normally with status: 0
+---------------------------------------------
+                launching...
+  _  _____  ____                _
+ | |/ / _ \|  _ \ ___  __ _  __| | ___ _ __
+ | ' / | | | |_) / _ \/ _` |/ _` |/ _ \ '__|
+ | . \ |_| |  _ <  __/ (_| | (_| |  __/ |
+ |_|\_\___/|_| \_\___|\__,_|\__,_|\___|_|
+
+ It's a scroll... It's a codex... It's KOReader!
+
+ [*] Current time: 09/29/26-19:45:29
+has monolibtic? no (libs/libkoreader-monolibtic.so: cannot open shared object file: No such file or directory)
+lib_search_path: libs/?
+lib_basic_format: lib%s.so
+lib_version_format: lib%s.so.%s
+ [*] Version: v2026.07.1
+
+ffi.load: rt.so.1 (RTLD_GLOBAL)
+ffi.findlib: utf8proc [3]
+ffi.load: libs/libutf8proc.so.3
+ffi.findlib: blitbuffer
+ffi.load: libs/libblitbuffer.so
+ffi.findlib: sqlite3 [0]
+ffi.load: libs/libsqlite3.so.0
+ffi.findlib: fbink_input [1]
+ffi.load: libs/libfbink_input.so.1
+[FBInk] /dev/input/event0: `20cc000.snvs:snvs-powerkey` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event1: `bd71827-power` = KEY | POWER_BUTTON
+[FBInk] /dev/input/event2: `cyttsp5_mt` = TOUCHSCREEN
+[ko-input] Forked off fake event generator (pid: 23653)
+09/29/26-19:45:29 INFO  initializing for device KindleBasic3 
+09/29/26-19:45:29 INFO  framebuffer resolution: {
+  h = 800,
+  w = 600
+} --[[table: 0x7692e780]] 
+[ko-input]: uevent listener ready for input device hotplug
+ffi.findlib: wrap-mupdf
+ffi.load: libs/libwrap-mupdf.so
+ffi.findlib: freetype [6]
+ffi.load: libs/libfreetype.so.6
+ffi.findlib: harfbuzz [0]
+ffi.load: libs/libharfbuzz.so.0
+ffi.findlib: zstd [1]
+ffi.load: libs/libzstd.so.1
+ffi.findlib: archive [13]
+ffi.load: libs/libarchive.so.13
+09/29/26-19:45:31 INFO  Looking for plugins in directory: plugins 
+ffi.findlib: leptonica [6]
+ffi.load: libs/libleptonica.so.6
+ffi.findlib: k2pdfopt [2]
+ffi.load: libs/libk2pdfopt.so.2
+09/29/26-19:45:32 WARN  PluginLoader: simpleui name in _meta.lua, is deprecated and will be ignored. 
+09/29/26-19:45:32 WARN  PluginLoader: spike name in _meta.lua, is deprecated and will be ignored. 
+CRE: font pmn caecilia lt regular: updated weight from 500 to 400
+CRE: font notosanskr bold: updated weight from 900 to 700
+CRE: font notoserifkr regular: updated weight from 500 to 400
+CRE: font notoserifkr bold: updated weight from 900 to 700
+09/29/26-19:45:44 INFO  simpleui updater: current=2.7.0 latest=2.7.1 has_update=true 
+09/29/26-19:50:51 INFO  [spike] 19:50:51 Q5 HTTP 1 result= 200 ms= 84 
+09/29/26-19:50:51 INFO  [spike] 19:50:51 Q5 HTTP 2 result= 200 ms= 96 
+09/29/26-19:50:51 INFO  [spike] 19:50:51 Q5 HTTP 3 result= 200 ms= 76 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 4 result= 200 ms= 78 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 5 result= 200 ms= 102 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 6 result= 200 ms= 73 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 7 result= 200 ms= 72 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 8 result= 200 ms= 82 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 9 result= 200 ms= 74 
+09/29/26-19:50:52 INFO  [spike] 19:50:52 Q5 HTTP 10 result= 200 ms= 89 
+09/29/26-19:50:53 INFO  [spike] 19:50:53 Q5 HTTPS 1 result= 400 ms= 550 
+09/29/26-19:50:53 INFO  [spike] 19:50:53 Q5 HTTPS 2 result= 400 ms= 225 
+09/29/26-19:50:53 INFO  [spike] 19:50:53 Q5 HTTPS 3 result= 400 ms= 258 
+09/29/26-19:50:53 INFO  [spike] 19:50:53 Q5 HTTPS 4 result= 400 ms= 255 
+09/29/26-19:50:54 INFO  [spike] 19:50:54 Q5 HTTPS 5 result= 400 ms= 314 
+09/29/26-19:50:54 INFO  [spike] 19:50:54 Q5 HTTPS 6 result= 400 ms= 257 
+09/29/26-19:50:54 INFO  [spike] 19:50:54 Q5 HTTPS 7 result= 400 ms= 290 
+09/29/26-19:50:54 INFO  [spike] 19:50:54 Q5 HTTPS 8 result= 400 ms= 241 
+09/29/26-19:50:55 INFO  [spike] 19:50:55 Q5 HTTPS 9 result= 400 ms= 317 
+09/29/26-19:50:55 INFO  [spike] 19:50:55 Q5 HTTPS 10 result= 400 ms= 248 
+09/29/26-19:50:55 INFO  [spike] 19:50:55 Q5 resumen
+HTTP  min=72  mediana=78  max=102 ms
+HTTPS  min=225  mediana=257  max=550 ms 
+09/29/26-19:53:26 INFO  [spike] 19:53:26 Q5 HTTP 1 result= 200 ms= 88 
+09/29/26-19:53:26 INFO  [spike] 19:53:26 Q5 HTTP 2 result= 200 ms= 80 
+09/29/26-19:53:26 INFO  [spike] 19:53:26 Q5 HTTP 3 result= 200 ms= 75 
+09/29/26-19:53:26 INFO  [spike] 19:53:26 Q5 HTTP 4 result= 200 ms= 66 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTP 5 result= 200 ms= 115 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTP 6 result= 200 ms= 85 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTP 7 result= 200 ms= 81 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTP 8 result= 200 ms= 81 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTP 9 result= 200 ms= 99 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTP 10 result= 200 ms= 108 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTPS 1 result= 400 ms= 229 
+09/29/26-19:53:27 INFO  [spike] 19:53:27 Q5 HTTPS 2 result= 400 ms= 215 
+09/29/26-19:53:28 INFO  [spike] 19:53:28 Q5 HTTPS 3 result= 400 ms= 213 
+09/29/26-19:53:28 INFO  [spike] 19:53:28 Q5 HTTPS 4 result= 400 ms= 262 
+09/29/26-19:53:28 INFO  [spike] 19:53:28 Q5 HTTPS 5 result= 400 ms= 262 
+09/29/26-19:53:28 INFO  [spike] 19:53:28 Q5 HTTPS 6 result= 400 ms= 248 
+09/29/26-19:53:29 INFO  [spike] 19:53:29 Q5 HTTPS 7 result= 400 ms= 264 
+09/29/26-19:53:29 INFO  [spike] 19:53:29 Q5 HTTPS 8 result= 400 ms= 288 
+09/29/26-19:53:29 INFO  [spike] 19:53:29 Q5 HTTPS 9 result= 400 ms= 308 
+09/29/26-19:53:30 INFO  [spike] 19:53:30 Q5 HTTPS 10 result= 400 ms= 318 
+09/29/26-19:53:30 INFO  [spike] 19:53:30 Q5 resumen
+HTTP  min=66  mediana=81  max=115 ms
+HTTPS  min=213  mediana=262  max=318 ms 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 1 result= 200 ms= 103 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 2 result= 200 ms= 82 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 3 result= 200 ms= 81 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 4 result= 200 ms= 97 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 5 result= 200 ms= 98 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 6 result= 200 ms= 86 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 7 result= 200 ms= 87 
+09/29/26-19:54:41 INFO  [spike] 19:54:41 Q5 HTTP 8 result= 200 ms= 77 
+09/29/26-19:54:42 INFO  [spike] 19:54:42 Q5 HTTP 9 result= 200 ms= 66 
+09/29/26-19:54:42 INFO  [spike] 19:54:42 Q5 HTTP 10 result= 200 ms= 119 
+09/29/26-19:54:42 INFO  [spike] 19:54:42 Q5 HTTPS 1 result= 400 ms= 225 
+09/29/26-19:54:42 INFO  [spike] 19:54:42 Q5 HTTPS 2 result= 400 ms= 244 
+09/29/26-19:54:42 INFO  [spike] 19:54:42 Q5 HTTPS 3 result= 400 ms= 226 
+09/29/26-19:54:43 INFO  [spike] 19:54:43 Q5 HTTPS 4 result= 400 ms= 285 
+09/29/26-19:54:43 INFO  [spike] 19:54:43 Q5 HTTPS 5 result= 400 ms= 251 
+09/29/26-19:54:43 INFO  [spike] 19:54:43 Q5 HTTPS 6 result= 400 ms= 242 
+09/29/26-19:54:43 INFO  [spike] 19:54:43 Q5 HTTPS 7 result= 400 ms= 237 
+09/29/26-19:54:44 INFO  [spike] 19:54:44 Q5 HTTPS 8 result= 400 ms= 258 
+09/29/26-19:54:44 INFO  [spike] 19:54:44 Q5 HTTPS 9 result= 400 ms= 251 
+09/29/26-19:54:44 INFO  [spike] 19:54:44 Q5 HTTPS 10 result= 400 ms= 248 
+09/29/26-19:54:44 INFO  [spike] 19:54:44 Q5 resumen
+HTTP  min=66  mediana=86  max=119 ms
+HTTPS  min=225  mediana=244  max=285 ms 
+09/29/26-19:56:27 INFO  [spike] 19:56:27 onSuspend t= 17150480 online= true wifi_on= true screensaver_type= disable 
+09/29/26-19:56:27 INFO  [spike] 19:56:27 Q2 probe result= 200 ms= 203 
+09/29/26-19:56:27 INFO  [spike] 19:56:27 Q4 bloqueando 1 s 
+09/29/26-19:56:29 INFO  [spike] 19:56:29 Q3 paint_ms= 1002 total_ms= 2228 label= SPIKE 19:56:28  espera=1s 
+09/29/26-19:56:29 INFO  Inhibiting user input 
+09/29/26-19:57:02 INFO  Restoring user input handling 
+09/29/26-19:57:02 INFO  [spike] 19:57:02 onResume t= 17185757 
+09/29/26-19:57:25 INFO  [spike] 19:57:25 onSuspend t= 17208403 online= true wifi_on= true screensaver_type= disable 
+09/29/26-19:57:25 INFO  [spike] 19:57:25 Q4 bloqueando 1 s 
+09/29/26-19:57:26 INFO  [spike] 19:57:26 Q3 paint_ms= 676 total_ms= 1694 label= SPIKE 19:57:26  espera=1s 
+09/29/26-19:57:26 INFO  Inhibiting user input 
+09/29/26-19:57:28 INFO  Restoring user input handling 
+09/29/26-19:57:29 INFO  [spike] 19:57:29 onResume t= 17212257 
+09/29/26-19:57:31 INFO  [spike] 19:57:31 onSuspend t= 17214844 online= true wifi_on= true screensaver_type= disable 
+09/29/26-19:57:31 INFO  [spike] 19:57:31 Q2 probe result= 200 ms= 140 
+09/29/26-19:57:31 INFO  [spike] 19:57:31 Q4 bloqueando 1 s 
+09/29/26-19:57:33 INFO  [spike] 19:57:33 Q3 paint_ms= 683 total_ms= 1843 label= SPIKE 19:57:32  espera=1s 
+09/29/26-19:57:33 INFO  Inhibiting user input 
+09/29/26-19:57:35 INFO  Restoring user input handling 
+09/29/26-19:57:36 INFO  [spike] 19:57:36 onResume t= 17219204 
+09/29/26-19:57:38 INFO  [spike] 19:57:38 onSuspend t= 17221639 online= true wifi_on= true screensaver_type= disable 
+09/29/26-19:57:38 INFO  [spike] 19:57:38 Q2 probe result= 200 ms= 183 
+09/29/26-19:57:38 INFO  [spike] 19:57:38 Q4 bloqueando 1 s 
+09/29/26-19:57:40 INFO  [spike] 19:57:40 Q3 paint_ms= 694 total_ms= 1914 label= SPIKE 19:57:39  espera=1s 
+09/29/26-19:57:40 INFO  Inhibiting user input 
+09/29/26-19:57:41 INFO  Restoring user input handling 
+09/29/26-19:57:41 INFO  [spike] 19:57:41 onResume t= 17224402 
+09/29/26-19:57:43 INFO  [spike] 19:57:43 onSuspend t= 17226755 online= true wifi_on= true screensaver_type= disable 
+09/29/26-19:57:43 INFO  [spike] 19:57:43 Q2 probe result= 200 ms= 149 
+09/29/26-19:57:43 INFO  [spike] 19:57:43 Q4 bloqueando 1 s 
+09/29/26-19:57:45 INFO  [spike] 19:57:45 Q3 paint_ms= 680 total_ms= 1852 label= SPIKE 19:57:44  espera=1s 
+09/29/26-19:57:45 INFO  Inhibiting user input 
+09/29/26-19:57:46 INFO  Restoring user input handling 
+09/29/26-19:57:46 INFO  [spike] 19:57:46 onResume t= 17229563 
+09/29/26-19:58:03 INFO  [spike] 19:58:03 onSuspend t= 17246974 online= true wifi_on= true screensaver_type= disable 
+09/29/26-19:58:03 INFO  [spike] 19:58:03 Q4 bloqueando 1 s 
+09/29/26-19:58:05 INFO  [spike] 19:58:05 Q3 paint_ms= 680 total_ms= 1703 label= SPIKE 19:58:04  espera=1s 
+09/29/26-19:58:05 INFO  Inhibiting user input 
+09/29/26-19:58:42 INFO  Restoring user input handling 
+09/29/26-19:58:42 INFO  [spike] 19:58:42 onResume t= 17285486 
+09/29/26-19:59:02 INFO  UIManager: No dialogs left to show 
+09/29/26-19:59:02 INFO  Tearing down UIManager with exit code: 0 
+[ko-input] Closed input device with fd: 17 @ idx: 1 (matched by idx)
+[ko-input] Closed input device with fd: 16 @ idx: 0 (matched by idx)
+[ue_wait_for_event:269] poll: Interrupted system call
+lipc-wait-event exited normally with status: 0

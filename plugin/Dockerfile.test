@@ -1,0 +1,8 @@
+# Entorno de tests del plugin: Lua 5.1 (misma semántica que LuaJIT de KOReader) + busted.
+FROM debian:bookworm-slim
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      lua5.1 liblua5.1-0-dev luarocks build-essential ca-certificates git unzip \
+    && rm -rf /var/lib/apt/lists/*
+RUN luarocks --lua-version=5.1 install busted && luarocks --lua-version=5.1 install dkjson
+WORKDIR /plugin
+CMD ["busted"]

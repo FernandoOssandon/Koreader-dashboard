@@ -1,0 +1,97 @@
+local Config = require("dashboard/config")
+local MemFS = require("memfs")
+local logger = require("logger")
+local json = require("json")
+
+local PATH = "/settings/dashboardscreensaver/settings.json"
+
+local function new(files)
+    local fs = MemFS.new(files)
+    return Config.new(PATH, { json = json, fs = fs }), fs
+end
+
+describe("config", function()
+    before_each(function() logger.reset() end)
+
+    it("crea el archivo con los defaults si no existe (primer arranque)", function()
+        local c, fs = new()
+        local cfg = c:load()
+        assert.is_true(fs:exists(PATH))
+        assert.is_true(fs.dirs["/settings/dashboardscreensaver"])
+        assert.is_true(cfg.enabled)
+        assert.equals("", cfg.backend.url)
+        assert.equals(2.2, cfg.backend.total_timeout_s)
+        assert.equals(600, cfg.cache.min_refresh_interval_s)
+        -- el archivo creado es JSON válido con sangría y se relee igual
+        assert.truthy(fs:read(PATH):find("\n  ", 1, true))
+        local again = new({ [PATH] = fs:read(PATH) })
+        assert.same(cfg, again:load())
+    end)
+
+    it("ajusta total_timeout_s = 10 a 2.5 y avisa", function()
+        local c = new({ [PATH] = '{"backend":{"total_timeout_s":10}}' })
+        local cfg = c:load()
+        assert.equals(2.5, cfg.backend.total_timeout_s)
+        assert.truthy(logger.text():find("backend.total_timeout_s", 1, true))
+    end)
+
+    it("ajusta los demás rangos", function()
+        local c = new({ [PATH] = '{"backend":{"connect_timeout_s":0.01},"cache":{"min_refresh_interval_s":-5},"display":{"max_events":99}}' })
+        local cfg = c:load()
+        assert.equals(0.3, cfg.backend.connect_timeout_s)
+        assert.equals(0, cfg.cache.min_refresh_interval_s)
+        assert.equals(8, cfg.display.max_events)
+    end)
+
+    it("ignora claves desconocidas", function()
+        local c = new({ [PATH] = '{"foo":1,"backend":{"bar":2,"url":"http://x/"}}' })
+        local cfg = c:load()
+        assert.is_nil(cfg.foo)
+        assert.is_nil(cfg.backend.bar)
+        assert.equals("http://x/", cfg.backend.url)
+    end)
+
+    it("conserva provider, fallback y direct.*", function()
+        local c = new({ [PATH] = '{"provider":"direct","fallback":"direct","direct":{"latitude":1.5,"ics_urls":["https://a"]}}' })
+        local cfg = c:load()
+        assert.equals("direct", cfg.provider)
+        assert.equals(1.5, cfg.direct.latitude)
+        assert.same({ "https://a" }, cfg.direct.ics_urls)
+    end)
+
+    it("JSON inválido: defaults en memoria y el archivo queda intacto", function()
+        local bad = '{"enabled": false,, "backend": {'
+        local c, fs = new({ [PATH] = bad })
+        local cfg = c:load()
+        assert.is_true(cfg.enabled)
+        assert.equals(bad, fs:read(PATH))
+        assert.truthy(logger.text():find("inválido", 1, true))
+        -- y tampoco lo sobrescribe al intentar guardar
+        assert.is_false((c:set("enabled", false)))
+        assert.equals(bad, fs:read(PATH))
+    end)
+
+    it("valores con tipo equivocado y null usan el default", function()
+        local c = new({ [PATH] = '{"enabled":"si","backend":{"url":null,"total_timeout_s":"rápido"},"display":{"anti_ghosting":"triple"}}' })
+        local cfg = c:load()
+        assert.is_true(cfg.enabled)
+        assert.equals("", cfg.backend.url)
+        assert.equals(2.2, cfg.backend.total_timeout_s)
+        assert.equals("full", cfg.display.anti_ghosting)
+    end)
+
+    it("respeta enabled = false", function()
+        local c = new({ [PATH] = '{"enabled":false}' })
+        assert.is_false(c:load().enabled)
+    end)
+
+    it("set guarda y get lee por clave con puntos", function()
+        local c, fs = new()
+        c:load()
+        assert.is_true(c:set("backend.url", "http://192.168.1.10:8080/api/dashboard"))
+        assert.equals("http://192.168.1.10:8080/api/dashboard", c:get("backend.url"))
+        local c2 = Config.new(PATH, { json = json, fs = fs })
+        assert.equals("http://192.168.1.10:8080/api/dashboard", c2:load().backend.url)
+        assert.is_nil(c:get("no.existe"))
+    end)
+end)

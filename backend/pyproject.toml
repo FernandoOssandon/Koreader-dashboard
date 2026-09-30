@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koreader-dashboard-backend"
+version = "0.1.0"
+description = "BFF que consolida clima y agenda para el dashboard de KOReader"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "httpx",
+    "icalendar>=6",
+    "recurring-ical-events",
+    "pydantic-settings",
+    "tzdata",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "respx", "jsonschema", "ruff"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
